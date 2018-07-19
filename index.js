@@ -3,7 +3,7 @@ function getFirstSelector(selector){
 }
 
 function nestedTarget(){
-  return document.querySelector('#nested').querySelector('.target');
+  return document.querySelector('#nested .target');
 }
 
 function increaseRankBy(n){
@@ -11,4 +11,8 @@ function increaseRankBy(n){
   for(let i = 0; i<rankedList.length; i++){
     rankedList[i].innerHTML = parseInt(rankedList[i].innerHTML) + parseInt(n);
   }
+}
+
+function deepestChild(){
+  
 }
